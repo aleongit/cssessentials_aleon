@@ -1,0 +1,72 @@
+<!doctype html>
+<html lang="ca"> <!-- meta idioma -->
+
+<head>
+    <meta charset="utf-8"><!--meta joc de caràcters -->
+    <meta name="viewport" content="width=device-width, initial-scale=1"><!-- etiqueta per HTML responsive -->
+    <meta name="description" content="">
+    <meta name="author" content="Aleix Leon">
+
+<title>HTML5-EX-111_aleon</title><!-- títol de la web -->
+
+<!-- CSS interns -->
+<style></style>
+
+<!-- estils aleon -->
+<link rel="stylesheet" type="text/css" href="css/aleon.css" >
+
+</head>
+<body>
+
+<h1>Formulari de registre</h1>
+
+<!--form-->
+<form method="post" action="" autocomplete >
+
+<!--input text-->
+<label for='nom'>Nom:</label>
+<input type="text" name="nom" size="50" maxlength="20" placeholder="Escriu nom" required autofocus/><br/><br/>
+
+<label for='nom'>Cognoms:</label>
+<input type="text" name="cognom" size="50" maxlength="50" placeholder="Escriu cognom" required /><br/><br/>
+
+<!--input radio-->
+<label for='sexe'>Sexe:</label>
+<input type='radio' id='d' name='sexe' value='d' checked>
+<label for='d'>Dona</label>
+<input type='radio' id='h' name='sexe' value='h'>
+<label for='h'>Home</label><br/><br/>
+
+<!--input email-->
+<label for='email'>Correu:</label>
+<input type="email" name="email" size="50" placeholder="Escriu correu electrònic" /><br/><br/>
+
+<!--select-->
+<label for="ciutats">Població:</label>
+<select name="ciutats" id="ciutats">
+  <option value="barcelona">Barcelona</option>
+  <option value="girona">Girona</option>
+  <option value="lleida">Lleida</option>
+  <option value="tarragona">Tarragona</option>
+</select><br/><br/>
+
+<!--textarea-->
+<label for="des">Descripció:</label>
+<textarea id="des" name="des" rows="4" cols="50">
+</textarea><br/><br/>
+
+<!--input checkbox-->
+<input type="checkbox" id="news" name="news" value="news" checked>
+<label for="news">Accepto rebre informació sobre novetats i ofertes</label><br>
+<input type="checkbox" id="rgpd" name="rgpd" value="rgpd">
+<label for="rgpd">He llegit i accepto el Reglament General de Protecció de Dades (RGPD)</label><br/><br/>
+
+<!--input submit-->
+<input type='submit' name='submit' value='Envia'>
+
+<footer>
+<p></br>© Aleix Leon 2021-22</p>
+</footer>
+
+</body>
+</html>

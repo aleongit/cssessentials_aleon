@@ -1,0 +1,83 @@
+<!doctype html>
+<html lang="ca"> <!-- meta idioma -->
+
+<head>
+    <meta charset="utf-8"><!--meta joc de caràcters -->
+    <meta name="viewport" content="width=device-width, initial-scale=1"><!-- etiqueta per HTML responsive -->
+    <meta name="description" content="">
+    <meta name="author" content="Aleix Leon">
+
+<title>HTML5-EX-112_aleon</title><!-- títol de la web -->
+
+<!-- CSS interns -->
+<style></style>
+
+<!-- estils aleon -->
+<link rel="stylesheet" type="text/css" href="css/aleon.css" >
+
+</head>
+<body>
+
+<h1>Formulari de registre</h1>
+
+<!--form-->
+<form method="post" action="" autocomplete >
+
+<!--input text-->
+<label for='nom'>Nom:</label>
+<input type="text" name="nom" required autofocus/><br/><br/>
+
+<!--input email-->
+<label for='email'>Correu electrònic:</label>
+<input type="email" name="email" /><br/><br/>
+
+<!--input URL-->
+<label for='url'>URL:</label>
+<input type="url" name="url" placeholder="Escriu URL pàgina web" /><br/><br/>
+
+<!--input date-->
+<label for='data'>Data:</label>
+<input type="date" name="data" placeholder="dd/mm/aaaa" /><br/><br/>
+
+<!--input time-->
+<label for='hora'>Hora:</label>
+<input type="time" name="hora" /><br/><br/>
+
+<!--input datetime-->
+<label for='dt'>Hora [DateTime]:</label>
+<input type="datetime-local" name="dt" /><br/><br/>
+
+<!--input mes-->
+<label for='mes'>Mes:</label>
+<input type="month" name="mes" /><br/><br/>
+
+<!--input setmana-->
+<label for='set'>Setmana:</label>
+<input type="week" name="set" /><br/><br/>
+
+<!--input number-->
+<label for="num">Número [1-10]:</label>
+<input type="number" id="num" name="num" min="1" max="10"><br/><br/>
+
+<!--input tel-->
+<label for='tlf'>Telèfon:</label>
+<input type="tel" name="tlf" maxlength="9"
+pattern="[6]{1}[0-9]{2}[0-9]{3}[0-9]{3}" placeholder="6xxxxxxxx" required /><br/><br/>
+
+<!--input busca-->
+<label for="busca">Busca:</label>
+<input type="search" name="busca"><br/><br/>
+
+<!--input color-->
+<label for="color">Color preferit:</label>
+<input type="color" name="color" value="#000000"><br/><br/>
+
+<!--input submit-->
+<input type='submit' name='submit' value='Envia'>
+
+<footer>
+<p></br>© Aleix Leon 2021-22</p>
+</footer>
+
+</body>
+</html>
