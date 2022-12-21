@@ -1,0 +1,135 @@
+<!doctype html>
+<html lang="ca"> <!-- meta idioma -->
+
+<head>
+    <meta charset="utf-8"><!--meta joc de caràcters -->
+    <meta name="viewport" content="width=device-width, initial-scale=1"><!-- etiqueta per HTML responsive -->
+    <meta name="description" content="">
+    <meta name="author" content="Aleix Leon">
+
+<title>CSS3-EX-213_aleon</title><!-- títol de la web -->
+
+<!-- CSS interns -->
+<style>
+
+table {
+  border-spacing: 0.1rem;
+  border: solid 1px;
+}
+
+th {
+  background-color:ghostwhite;
+  font-weight: bold;
+  padding: 0.8em;
+  border: solid 1px;
+  vertical-align: middle;
+  text-align: center;
+}
+
+td {
+  text-align: right;
+  padding: 0.5em;
+  border: solid 1px;
+}
+/* = th[class]*/
+th.euro, th.dolar, th.libra, th.yen {
+  background-color:aliceblue;
+  padding: 0.5em 0.3em 0.5em 0;
+  vertical-align: middle;
+  text-align: center;
+}
+
+/*carregar contingut imatge després classe*/
+/*resta de propietats perquè la imatge quedi alineada a l'esquerra, i text th centrat*/
+th.euro::before {
+  content: url(../img/euro.png);
+  display: block;
+  margin: -2px 5px 0 auto;
+  position: relative;
+  text-align: left;
+  float: left;
+}
+th.dolar::before {
+  content: url(../img/dolar.png);
+  display: block;
+  margin: -2px 5px 0 auto;
+  position: relative;
+  text-align: left;
+  float: left;
+}
+th.libra::before {
+  content: url(../img/libra.png);
+  display: block;
+  margin: -2px 5px 0 auto;
+  position: relative;
+  text-align: left;
+  float: left;}
+th.yen::before {
+  content: url(../img/yen.png);
+  display: block;
+  margin: -2px 5px 0 auto;
+  position: relative;
+  text-align: left;
+  float: left;}
+
+/*files parells i senars*/
+tr:nth-child(even) {background: #FFFFCC}
+tr:nth-child(odd) {background: #FFF}
+
+/*hover fila*/
+tr:hover {background-color: #ffff4d;}
+
+
+</style>
+
+<!-- estils aleon -->
+<!--<link rel="stylesheet" type="text/css" href="css/aleon.css" >-->
+
+</head>
+<body>
+
+  <table>
+    <tr>
+      <th>Cambio</th>
+      <th>Compra</th>
+      <th>Venta</th>
+      <th>Máximo</th>
+      <th>Mínimo</th>
+    </tr>
+    <tr>
+      <th class="euro">Euro/Dolar</th>
+      <td>1.25</td>
+      <td>1.25</td>
+      <td>1.25</td>
+      <td>1.24</td>
+    </tr>
+    <tr>
+      <th class="dolar">Dolar/Yen</th>
+      <td>119.01</td>
+      <td>119.05</td>
+      <td>119.82</td>
+      <td>119.82</td>
+    </tr>
+    <tr>
+      <th class="libra">Libra/Dolar</th>
+      <td>1.86</td>
+      <td>1.86</td>
+      <td>1.86</td>
+      <td>1.85</td>
+    </tr>
+    <tr>
+      <th class="yen">Yen/Euro</th>
+      <td>0.67</td>
+      <td>0.67</td>
+      <td>0.66</td>
+      <td>0.67</td>
+    </tr>
+  </table>
+
+ 
+<footer>
+<p></br>© Aleix Leon 2021-22</p>
+</footer>
+
+</body>
+</html>

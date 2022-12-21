@@ -2,8 +2,8 @@
 
 Recopilació d'exercicis essencials CSS by aleon.
 
-- **HTML5** TODO:
-
+- **HTML5 Basics** 11 to 112
+- **CSS3 Basics** 21 to 213
 
 
 ## Requeriments

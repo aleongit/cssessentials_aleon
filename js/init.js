@@ -51,7 +51,7 @@ const fesGrid = () => {
 
     section.style.backgroundColor = `rgb(${
       el.categorty.color
-    } / ${(perCent -= 8)}%)`;
+    } / ${(perCent -= 7)}%)`;
 
     //append
     section.appendChild(a);
