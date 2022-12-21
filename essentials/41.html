@@ -1,0 +1,130 @@
+<!doctype html>
+<html lang="ca"> <!-- meta idioma -->
+
+<head>
+  <meta charset="utf-8"><!--meta joc de caràcters -->
+  <meta name="viewport" content="width=device-width, initial-scale=1"><!-- etiqueta per HTML responsive -->
+  <meta name="description" content="">
+  <meta name="author" content="Aleix Leon">
+
+  <title>CSS3-EX-51_aleon</title><!-- títol de la web -->
+
+  <!-- CSS interns -->
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      background-color: #222;
+    }
+
+    h1 {
+      text-align: center;
+      color: #aaa;
+    }
+
+    /*cercle amb background radial-gradient 2 colors per efecte 3d + ombra interna amb box-shadow*/
+    .esfera {
+      width: 300px;
+      height: 300px;
+      margin: 100px auto;
+      background: radial-gradient(closest-side at 125px 125px,
+          #0ac0bb 5%,
+          #122d2e 200%);
+      box-shadow: -50px -50px 100px 0px #122d2e inset;
+      border-radius: 50%;
+      position: relative;
+    }
+
+    /* ombra natural de sota amb after */
+    /* col·locació amb top i left */
+    /* mides amb width i height*/
+    /* z-index profunditat*/
+
+    .esfera:after {
+      content: "";
+      display: block;
+      width: 325px;
+      height: 15px;
+      background: rgba(0, 0, 0, 0.5);
+      border-radius: 50%;
+      box-shadow: 0 0 10px 15px rgba(0, 0, 0, 0.5);
+      position: absolute;
+      top: 275px;
+      left: 100px;
+      z-index: -1;
+      opacity: 0.9;
+    }
+
+    /*esferes test -------------------------------------------------------------------------- */
+
+    .esfera_test1 {
+      display: block;
+      margin: 100px auto;
+      /*background: black;*/
+      border-radius: 100%;
+      height: 300px;
+      width: 300px;
+      background: radial-gradient(circle at 100px 100px, #0ac0bb, #122d2e);
+    }
+
+    .esfera_test2 {
+      width: 20em;
+      height: 20em;
+      line-height: 20em;
+      text-align: center;
+      background-color: cadetblue;
+      color: white;
+      margin: 100px auto;
+      /* The magic are those 2 lines: */
+      border-radius: 100%;
+
+      /*box-shadow: none|h-offset v-offset blur spread color |inset|initial|inherit;*/
+      box-shadow: inset -80px -80px 80px rgba(0, 0, 0, .5),
+        80px 80px 80px rgba(0, 0, 0, .5);
+      /*box-shadow :  inset 0   0   80px   white ;*/
+      /*box-shadow :  inset 80px   0   0   white ;*/
+      /*mitja lluna esquerre*/
+      /*box-shadow :  inset 0   80px   0   white ;*/
+      /*mitja lluna superior*/
+      /*box-shadow :  inset 0   0   10px    white;*/
+      /*eclipsi*/
+      /*box-shadow :  inset 0 0 0 80px white; */
+      /* ull */
+
+    }
+
+    .esfera_test3 {
+      display: block;
+      width: 200px;
+      height: 200px;
+      margin: 30px auto 0;
+      background-color: #3b4ba3;
+      border-radius: 50%;
+      box-shadow: inset -25px -25px 40px rgba(0, 0, 0, .5);
+      background-image: -webkit-linear-gradient(-45deg, rgba(255, 255, 220, .2) 0%, transparent 100%);
+      background-image: -moz-linear-gradient(-45deg, rgba(255, 255, 220, .2) 0%, transparent 100%);
+      background-image: -o-linear-gradient(-45deg, rgba(255, 255, 220, .2) 0%, transparent 100%);
+      background-image: -ms-linear-gradient(-45deg, rgba(255, 255, 220, .2) 0%, transparent 100%);
+    }
+
+    footer {
+      color: whitesmoke;
+    }
+  </style>
+
+  <!-- estils aleon -->
+  <!--<link rel="stylesheet" type="text/css" href="css/aleon.css" >-->
+
+</head>
+
+<body>
+  <h1>Creació d'una esfera amb ombrejat (Pseudoclasses)</h1>
+  <div class="esfera"></div>
+
+  <footer>
+    <p></br>© Aleix Leon 2021-22</p>
+  </footer>
+
+</body>
+
+</html>

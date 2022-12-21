@@ -4,7 +4,9 @@ Recopilació d'exercicis essencials CSS by aleon.
 
 - **HTML5 Basics** 11 to 112
 - **CSS3 Basics** 21 to 213
-- **CSS3 Layouts** 31 to 32
+- **CSS3 Layouts** 31 to 33
+- **CSS3 Position** 41 to 42
+- **CSS Backgrounds** 51 to 52
 
 
 ## Requeriments

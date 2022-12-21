@@ -42,6 +42,7 @@ section {
   background-color: gold;
   width: 100%;
   padding: 1rem;
+  word-break: break-word;
 }
 
 h1 {

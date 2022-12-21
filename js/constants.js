@@ -16,6 +16,14 @@ const CATEGORIES = {
     title: "CSS Layouts",
     color: "54 146 244", //blau
   },
+  cssposition: {
+    title: "CSS Position",
+    color: "60 174 41", //verd
+  },
+  cssbackgrounds: {
+    title: "CSS Backgrounds",
+    color: "255 235 59", //groc
+  },
 };
 
 //object
@@ -243,6 +251,44 @@ const ESSENTIALS = [
     title: "CSS3 Old Style",
     subtitle: "Exemple de maquetació old style",
     text: `Old Style works!`,
+  },
+  {
+    id: 41,
+    href: `essentials/41.html`,
+    category: CATEGORIES.cssposition,
+    title: "CSS3 Position 1",
+    subtitle: "Exemple de posicionar una esfera",
+    text: `The position property specifies the type of positioning method used for an element. 
+    static, relative, fixed, absolute, sticky.
+    CSS z-index`,
+  },
+  {
+    id: 42,
+    href: `essentials/42.html`,
+    category: CATEGORIES.cssposition,
+    title: "CSS3 Position 2",
+    subtitle: "Exemple de posicionar una esfera i efecte hover",
+    text: `The position property specifies the type of positioning method used for an element. 
+    static, relative, fixed, absolute, sticky.
+    CSS z-index`,
+  },
+  {
+    id: 51,
+    href: `essentials/51.html`,
+    category: CATEGORIES.cssbackgrounds,
+    title: "CSS3 Backgrounds 1",
+    subtitle: "Exemples amb imatges planes",
+    text: `background-color, background-image, background-repeat, background-attachment, background-position, background.
+    vertical-align`,
+  },
+  {
+    id: 52,
+    href: `essentials/52.html`,
+    category: CATEGORIES.cssbackgrounds,
+    title: "CSS3 Backgrounds 2",
+    subtitle: "Exemples amb imatges planes",
+    text: `background-color, background-image, background-repeat, background-attachment, background-position, background.
+    vertical-align`,
   },
 
 ];
