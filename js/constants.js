@@ -23,7 +23,7 @@ const ESSENTIALS = [
   {
     id: 11,
     href: "essentials/11.html",
-    categorty: CATEGORIES.html5,
+    category: CATEGORIES.html5,
     title: "HTML5 Basic 1",
     subtitle: "Exemple d'una pàgina HTML5",
     text: "HTML Basic, Elements, Attributes, Headings, Paragraphs, Formatting, Quotations",
@@ -31,7 +31,7 @@ const ESSENTIALS = [
   {
     id: 12,
     href: "essentials/12.html",
-    categorty: CATEGORIES.html5,
+    category: CATEGORIES.html5,
     title: "HTML5 Basic 2",
     subtitle: "Exemple d'una pàgina HTML5",
     text: "HTML Basic, Elements, Attributes, Headings, Paragraphs, Formatting, Quotations",
@@ -39,7 +39,7 @@ const ESSENTIALS = [
   {
     id: 13,
     href: "essentials/13.html",
-    categorty: CATEGORIES.html5,
+    category: CATEGORIES.html5,
     title: "HTML5 Basic 3",
     subtitle: "Exemple d'una pàgina HTML5",
     text: "HTML Basic, Elements, Attributes, Headings, Paragraphs, Formatting, Quotations",
@@ -47,7 +47,7 @@ const ESSENTIALS = [
   {
     id: 14,
     href: "essentials/14.html",
-    categorty: CATEGORIES.html5,
+    category: CATEGORIES.html5,
     title: "HTML5 Basic 4",
     subtitle: "Exemple d'una pàgina HTML5",
     text: "HTML Basic, Elements, Attributes, Headings, Paragraphs, Formatting, Quotations",
@@ -55,7 +55,7 @@ const ESSENTIALS = [
   {
     id: 15,
     href: "essentials/15.html",
-    categorty: CATEGORIES.html5,
+    category: CATEGORIES.html5,
     title: "HTML5 Basic 5",
     subtitle: "Exemple d'una pàgina HTML5",
     text: "HTML Basic, Elements, Attributes, Headings, Paragraphs, Formatting, Quotations",
@@ -63,7 +63,7 @@ const ESSENTIALS = [
   {
     id: 16,
     href: "essentials/16.html",
-    categorty: CATEGORIES.html5,
+    category: CATEGORIES.html5,
     title: "HTML5 Links",
     subtitle: "Exemple d'una pàgina HTML5 amb enllaços",
     text: `HTML Links: <a href>`,
@@ -71,7 +71,7 @@ const ESSENTIALS = [
   {
     id: 17,
     href: "essentials/17.html",
-    categorty: CATEGORIES.html5,
+    category: CATEGORIES.html5,
     title: "HTML5 Lists",
     subtitle: "Exemple d'una pàgina HTML5 amb llistes",
     text: `HTML Lists: Unordered HTML List <ul><li>, Ordered HTML List <ol><li>, HTML Description Lists <dl><dt><dd>`,
@@ -79,7 +79,7 @@ const ESSENTIALS = [
   {
     id: 18,
     href: "essentials/18.html",
-    categorty: CATEGORIES.html5,
+    category: CATEGORIES.html5,
     title: "HTML5 Tables 1",
     subtitle: "Exemple d'una pàgina HTML5 amb taules",
     text: `HTML Tables: <table>, Table Cells <td>, Table Rows <tr>, Table Headers <th>`,
@@ -87,7 +87,7 @@ const ESSENTIALS = [
   {
     id: 19,
     href: `essentials/19.html`,
-    categorty: CATEGORIES.html5,
+    category: CATEGORIES.html5,
     title: "HTML5 Tables 2",
     subtitle: "Exemple d'una pàgina HTML5 amb taules",
     text: `HTML Tables: <table>, Table Cells <td>, Table Rows <tr>, Table Headers <th>`,
@@ -95,7 +95,7 @@ const ESSENTIALS = [
   {
     id: 110,
     href: `essentials/110.html`,
-    categorty: CATEGORIES.html5,
+    category: CATEGORIES.html5,
     title: "HTML5 Forms 1",
     subtitle: "Exemple d'una pàgina HTML5 amb formulari",
     text: `<form> <input> <label>, Text Fields, Radio Buttons, Checkboxes, Submit Button, Form Attributes, Form Elements, Input Types, Input Attributes`,
@@ -103,7 +103,7 @@ const ESSENTIALS = [
   {
     id: 111,
     href: `essentials/111.html`,
-    categorty: CATEGORIES.html5,
+    category: CATEGORIES.html5,
     title: "HTML5 Forms 2",
     subtitle: "Exemple d'una pàgina HTML5 amb formulari",
     text: `<form> <input> <label>, Text Fields, Radio Buttons, Checkboxes, Submit Button, Form Attributes, Form Elements, Input Types, Input Attributes`,
@@ -111,7 +111,7 @@ const ESSENTIALS = [
   {
     id: 112,
     href: `essentials/112.html`,
-    categorty: CATEGORIES.html5,
+    category: CATEGORIES.html5,
     title: "HTML5 Forms 3",
     subtitle: "Exemple d'una pàgina HTML5 amb formulari",
     text: `<form> <input> <label>, Text Fields, Radio Buttons, Checkboxes, Submit Button, Form Attributes, Form Elements, Input Types, Input Attributes`,
@@ -119,7 +119,7 @@ const ESSENTIALS = [
   {
     id: 21,
     href: `essentials/21.html`,
-    categorty: CATEGORIES.css3,
+    category: CATEGORIES.css3,
     title: "CSS3 Basic 1",
     subtitle: "Exemple d'una pàgina HTML5 amb CSS3",
     text: `CSS Selectors: Simple selectors (name, id, class), Combinator selectors, Pseudo-class selectors, Pseudo-elements selectors, Attribute selectors`,
@@ -127,7 +127,7 @@ const ESSENTIALS = [
   {
     id: 22,
     href: `essentials/22.html`,
-    categorty: CATEGORIES.css3,
+    category: CATEGORIES.css3,
     title: "CSS3 Basic 2",
     subtitle: "Exemple d'una pàgina HTML5 amb CSS3",
     text: `CSS Selectors: Simple selectors (name, id, class), Combinator selectors, Pseudo-class selectors, Pseudo-elements selectors, Attribute selectors`,
@@ -135,7 +135,7 @@ const ESSENTIALS = [
   {
     id: 23,
     href: `essentials/23.html`,
-    categorty: CATEGORIES.css3,
+    category: CATEGORIES.css3,
     title: "CSS3 Basic 3",
     subtitle: "Exemple d'una pàgina HTML5 amb CSS3",
     text: `CSS Selectors: Simple selectors (name, id, class), Combinator selectors, Pseudo-class selectors, Pseudo-elements selectors, Attribute selectors`,
@@ -143,7 +143,7 @@ const ESSENTIALS = [
   {
     id: 24,
     href: `essentials/24.html`,
-    categorty: CATEGORIES.css3,
+    category: CATEGORIES.css3,
     title: "CSS3 Basic 4",
     subtitle: "Exemple d'una pàgina HTML5 amb CSS3",
     text: `CSS Selectors: Simple selectors (name, id, class), Combinator selectors, Pseudo-class selectors, Pseudo-elements selectors, Attribute selectors`,
@@ -151,7 +151,7 @@ const ESSENTIALS = [
   {
     id: 25,
     href: `essentials/25.html`,
-    categorty: CATEGORIES.css3,
+    category: CATEGORIES.css3,
     title: "CSS3 Basic 5",
     subtitle: "Exemple d'una pàgina HTML5 amb CSS3",
     text: `CSS Selectors: Simple selectors (name, id, class), Combinator selectors, Pseudo-class selectors, Pseudo-elements selectors, Attribute selectors`,
@@ -159,7 +159,7 @@ const ESSENTIALS = [
   {
     id: 26,
     href: `essentials/26.html`,
-    categorty: CATEGORIES.css3,
+    category: CATEGORIES.css3,
     title: "CSS3 Basic 6",
     subtitle: "Exemple d'una pàgina HTML5 amb CSS3",
     text: `CSS Selectors: Simple selectors (name, id, class), Combinator selectors, Pseudo-class selectors, Pseudo-elements selectors, Attribute selectors`,
@@ -167,7 +167,7 @@ const ESSENTIALS = [
   {
     id: 27,
     href: `essentials/27.html`,
-    categorty: CATEGORIES.css3,
+    category: CATEGORIES.css3,
     title: "CSS3 Basic 7",
     subtitle: "Exemple d'una pàgina HTML5 amb CSS3",
     text: `CSS Selectors: Simple selectors (name, id, class), Combinator selectors, Pseudo-class selectors, Pseudo-elements selectors, Attribute selectors`,
@@ -175,7 +175,7 @@ const ESSENTIALS = [
   {
     id: 28,
     href: `essentials/28.html`,
-    categorty: CATEGORIES.css3,
+    category: CATEGORIES.css3,
     title: "CSS3 Basic 8",
     subtitle: "Exemple d'una pàgina HTML5 amb CSS3",
     text: `CSS Selectors: Simple selectors (name, id, class), Combinator selectors, Pseudo-class selectors, Pseudo-elements selectors, Attribute selectors`,
@@ -183,7 +183,7 @@ const ESSENTIALS = [
   {
     id: 29,
     href: `essentials/29.html`,
-    categorty: CATEGORIES.css3,
+    category: CATEGORIES.css3,
     title: "CSS3 Basic 9",
     subtitle: "Exemple d'una pàgina HTML5 amb CSS3",
     text: `CSS Selectors: Simple selectors (name, id, class), Combinator selectors, Pseudo-class selectors, Pseudo-elements selectors, Attribute selectors`,
@@ -191,7 +191,7 @@ const ESSENTIALS = [
   {
     id: 210,
     href: `essentials/210.html`,
-    categorty: CATEGORIES.css3,
+    category: CATEGORIES.css3,
     title: "CSS3 Basic 10",
     subtitle: "Exemple d'una pàgina HTML5 amb CSS3",
     text: `CSS Selectors: Simple selectors (name, id, class), Combinator selectors, Pseudo-class selectors, Pseudo-elements selectors, Attribute selectors`,
@@ -199,7 +199,7 @@ const ESSENTIALS = [
   {
     id: 211,
     href: `essentials/211.html`,
-    categorty: CATEGORIES.css3,
+    category: CATEGORIES.css3,
     title: "CSS3 Basic 11",
     subtitle: "Exemple d'una pàgina HTML5 amb CSS3",
     text: `CSS Selectors: Simple selectors (name, id, class), Combinator selectors, Pseudo-class selectors, Pseudo-elements selectors, Attribute selectors`,
@@ -207,7 +207,7 @@ const ESSENTIALS = [
   {
     id: 212,
     href: `essentials/212.html`,
-    categorty: CATEGORIES.css3,
+    category: CATEGORIES.css3,
     title: "CSS3 Basic 12",
     subtitle: "Exemple d'una pàgina HTML5 amb CSS3",
     text: `CSS Selectors: Simple selectors (name, id, class), Combinator selectors, Pseudo-class selectors, Pseudo-elements selectors, Attribute selectors`,
@@ -215,7 +215,7 @@ const ESSENTIALS = [
   {
     id: 213,
     href: `essentials/213.html`,
-    categorty: CATEGORIES.css3,
+    category: CATEGORIES.css3,
     title: "CSS3 Basic 13",
     subtitle: "Exemple d'una pàgina HTML5 amb CSS3",
     text: `CSS Selectors: Simple selectors (name, id, class), Combinator selectors, Pseudo-class selectors, Pseudo-elements selectors, Attribute selectors`,
@@ -223,7 +223,7 @@ const ESSENTIALS = [
   {
     id: 31,
     href: `essentials/31.html`,
-    categorty: CATEGORIES.csslayouts,
+    category: CATEGORIES.csslayouts,
     title: "CSS3 Fixed Layout",
     subtitle: "Exemple de maquetació fixa",
     text: `CSS Fixed layouts are layouts with fixed width in px or em, exp 960px, 1200px, 1170px, 1320px etc. The width of layout is fixed, that's why its called fixed layout.`,
@@ -231,7 +231,7 @@ const ESSENTIALS = [
   {
     id: 32,
     href: `essentials/32.html`,
-    categorty: CATEGORIES.csslayouts,
+    category: CATEGORIES.csslayouts,
     title: "CSS3 Liquid Layout 1",
     subtitle: "Exemple de maquetació fluïda",
     text: `Fluid or Elastic or Liquid Layout is a layout in which the width of main container is flexible( in percentage). Whatever the screen-size is, the layout will remain same`,

@@ -9,9 +9,9 @@ const fesGrid = () => {
     num,
     h2,
     p = null;
-  let randomColor,
-    color = 0;
+  //let randomColor,color = 0;
   let perCent = 100;
+  let factor = 0;
   let cat = "";
 
   //per cada element arra
@@ -23,8 +23,8 @@ const fesGrid = () => {
     a.setAttribute("href", el.href);
 
     num = document.createElement("p");
-    num.setAttribute("class", 'num');
-    num.innerHTML = el.id
+    num.setAttribute("class", "num");
+    num.innerHTML = el.id;
 
     h1 = document.createElement("h1");
     h1.innerHTML = el.title;
@@ -44,14 +44,20 @@ const fesGrid = () => {
     //section.style.backgroundColor = `rgb(255 215 ${color += 30})`;
 
     //si canvia categoria, inicialitzem transperència
-    if (cat !== el.categorty) {
-      cat = el.categorty;
+    if (cat !== el.category) {
+      cat = el.category;
       perCent = 100;
+
+      //factor perCent depenent número items cat => 100 / (items cat) + 1
+      factor =
+        100 /
+        (ESSENTIALS.filter(({ category }) => category === el.category).length +
+          1);
+      console.log(factor);
     }
 
-    section.style.backgroundColor = `rgb(${
-      el.categorty.color
-    } / ${(perCent -= 7)}%)`;
+    section.style.backgroundColor = `rgb(${el.category.color} / ${(perCent -=
+      factor)}%)`;
 
     //append
     section.appendChild(a);
