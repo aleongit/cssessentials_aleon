@@ -8,9 +8,10 @@ const fesGrid = () => {
     h1,
     h2,
     p = null;
+  let randomColor, color = 0
+  let perCent = 100
 
   //per cada element arra
-
   ESSENTIALS.forEach((el) => {
     //create
     section = document.createElement("section");
@@ -27,6 +28,14 @@ const fesGrid = () => {
     //per escapar HTML
     p = document.createElement("p");
     p.appendChild(document.createTextNode(el.text));
+
+    //estil box
+    //randomColor = "#"+((1<<24)*Math.random()|0).toString(16);
+    //gold = rgb(255 215 0) = rgb(255 215 0 / 0%);
+    
+    //section.style.backgroundColor = randomColor;
+    //section.style.backgroundColor = `rgb(255 215 ${color += 30})`;
+    section.style.backgroundColor = `rgb(255 215 0 / ${perCent -= 5}%)`;
 
     //append
     section.appendChild(a);
