@@ -1,0 +1,102 @@
+<!doctype html>
+<html lang="ca"> <!-- meta idioma -->
+
+<head>
+
+  <meta charset="utf-8"><!--meta joc de caràcters -->
+  <meta name="viewport" content="width=device-width, initial-scale=1"><!-- etiqueta per HTML responsive -->
+  <meta name="description" content="">
+  <meta name="author" content="Aleix Leon">
+
+  <title>CSS3-EX-63_aleon</title><!-- títol de la web -->
+
+
+  <!-- CSS interns -->
+  <style>
+    body {
+      margin: 0;
+      background-color: black;
+      color: white;
+    }
+
+    .formulari {
+      width: 40%;
+      min-width: 270px;
+      padding: 1.2em 4em;
+      margin: auto;
+      margin-top: 2px;
+      position: relative;
+      display: block;
+      border: 2px solid red;
+    }
+
+    .input1,
+    .input2,
+    textarea,
+    select {
+      width: 100%;
+      padding: 12px 5px;
+      margin-bottom: 1em;
+      display: block;
+      border: none;
+      box-sizing: border-box;
+      font-size: 1.1em;
+      background-color: rgb(73, 73, 73);
+      color: white;
+    }
+
+    .botoSubmit {
+      width: 90px;
+      display: inline-block;
+      background-color: rgb(73, 73, 73);
+      color: grey;
+      border: 2px solid rgb(73, 73, 73);
+      padding: 8px 5px;
+      text-align: center;
+      margin-bottom: 1em;
+      font-size: 0.9em;
+      font-weight: bold;
+      font-size: larger;
+    }
+
+    .botoSubmit:hover {
+      border: 2px solid red;
+      color: white;
+      cursor: pointer;
+    }
+
+    input[type='submit'] {
+      margin-left: 30px;
+    }
+
+    footer {
+      padding-top: 2em;
+      text-align: center;
+    }
+  </style>
+  <!-- estils aleon -->
+  <!--<link rel="stylesheet" type="text/css" href="css/aleon.css" >-->
+
+</head>
+
+<body>
+
+  <form class="formulari" id="formulari" action="" method="get">
+    <input type="text" class="input1" placeholder="Text Input" id="input1" />
+    <input type="text" class="input2" value="Text Input focused" id="input2" autofocus />
+    <textarea id="textarea1">Textarea</textarea>
+    <select id="select1">
+      <option value="op1">Select...</option>
+      <option value="op2">Another</option>
+    </select>
+    <input type="submit" class="botoSubmit" value="Submit" />
+    <input type="reset" class="botoSubmit" value="Cancel" />
+  </form>
+
+  <footer>
+    <p></br>© Aleix Leon 2021-22</p>
+  </footer>
+
+</body>
+
+</html>

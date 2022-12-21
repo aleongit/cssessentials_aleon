@@ -1,0 +1,100 @@
+<!doctype html>
+<html lang="ca"> <!-- meta idioma -->
+
+<head>
+
+  <meta charset="utf-8"><!--meta joc de caràcters -->
+  <meta name="viewport" content="width=device-width, initial-scale=1"><!-- etiqueta per HTML responsive -->
+  <meta name="description" content="">
+  <meta name="author" content="Aleix Leon">
+
+  <title>CSS3-EX-62_aleon</title><!-- títol de la web -->
+
+
+  <!-- CSS interns -->
+  <style>
+    body {
+      margin: 0;
+      background-color: #acd497;
+    }
+
+    .form {
+      width: 27%;
+      min-width: 270px;
+      padding: 3em;
+      margin: auto;
+      background-color: white;
+      margin-top: 3em;
+      position: relative;
+      display: block;
+      box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    }
+
+    .login-form input {
+      width: 100%;
+      padding: 12px 5px;
+      margin-bottom: 1em;
+      display: block;
+      border: none;
+      box-sizing: border-box;
+      font-size: 1.1em;
+      background-color: whitesmoke;
+    }
+
+    button {
+      width: 100%;
+      display: block;
+      background-color: green;
+      color: white;
+      border: 1px solid whitesmoke;
+      padding: 12px 5px;
+      text-align: center;
+      text-transform: uppercase;
+      margin-bottom: 1em;
+      font-size: 0.9em;
+    }
+
+    button:hover {
+      background-color: #44a049;
+      cursor: pointer;
+    }
+
+    .message {
+      text-align: center;
+      color: lightgrey;
+    }
+
+    a {
+      color: #44a049;
+      text-decoration: none;
+      cursor: pointer;
+    }
+
+    footer {
+      padding-top: 2em;
+      text-align: center;
+    }
+  </style>
+  <!-- estils aleon -->
+  <!--<link rel="stylesheet" type="text/css" href="css/aleon.css" >-->
+
+</head>
+
+<body>
+
+  <div class="form">
+    <form class="login-form">
+      <input type="text" placeholder="usuari" />
+      <input type="password" placeholder="contrasenya" />
+      <button>login</button>
+      <p class="message">No estàs registrat? <a href="#">Crear un nou compte</a></p>
+    </form>
+  </div>
+
+  <footer>
+    <p></br>© Aleix Leon 2021-22</p>
+  </footer>
+
+</body>
+
+</html>

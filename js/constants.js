@@ -24,6 +24,10 @@ const CATEGORIES = {
     title: "CSS Backgrounds",
     color: "255 235 59", //groc
   },
+  cssforms: {
+    title: "CSS Forms",
+    color: "255 152 0", //taronja
+  },
 };
 
 //object
@@ -290,5 +294,34 @@ const ESSENTIALS = [
     text: `background-color, background-image, background-repeat, background-attachment, background-position, background.
     vertical-align`,
   },
-
+  {
+    id: 61,
+    href: `essentials/61.html`,
+    category: CATEGORIES.cssforms,
+    title: "CSS3 Forms 1",
+    subtitle: "Exemples de formularis avançats",
+    text: `Styling Input Fields, Padded Inputs, Bordered Inputs, Colored Inputs, 
+    Focused Inputs, Styling Textareas, Styling Select Menus, Styling Input Buttons, 
+    Responsive Form`,
+  },
+  {
+    id: 62,
+    href: `essentials/62.html`,
+    category: CATEGORIES.cssforms,
+    title: "CSS3 Forms 2",
+    subtitle: "Exemples de formularis avançats",
+    text: `Styling Input Fields, Padded Inputs, Bordered Inputs, Colored Inputs, 
+    Focused Inputs, Styling Textareas, Styling Select Menus, Styling Input Buttons, 
+    Responsive Form`,
+  },
+  {
+    id: 63,
+    href: `essentials/63.html`,
+    category: CATEGORIES.cssforms,
+    title: "CSS3 Forms 3",
+    subtitle: "Exemples de formularis avançats",
+    text: `Styling Input Fields, Padded Inputs, Bordered Inputs, Colored Inputs, 
+    Focused Inputs, Styling Textareas, Styling Select Menus, Styling Input Buttons, 
+    Responsive Form`,
+  },
 ];
