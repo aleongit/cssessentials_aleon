@@ -1,0 +1,230 @@
+<!doctype html>
+<html lang="ca"> <!-- meta idioma -->
+
+<head>
+    <meta charset="utf-8"><!--meta joc de caràcters -->
+    <meta name="viewport" content="width=device-width, initial-scale=1"><!-- etiqueta per HTML responsive -->
+    <meta name="description" content="">
+    <meta name="author" content="Aleix Leon">
+
+<title>CSS3-EX-33_aleon</title><!-- títol de la web -->
+
+<!-- CSS interns -->
+<style>
+
+/*Tasca 4. Exercici de maquetació OldStyle
+Aplicant un disseny de tipus fluid (%), i propietats tipus: float, clear, display, padding, etc.:
+
+1) Fer una estructuració semàntica de la pàgina
+2) Aplicar estils per arribar a la solució proposada*/
+
+body {
+    font-family: "Libre Franklin", "Helvetica Neue", helvetica, arial, sans-serif;
+    background-color:aliceblue;
+    margin: 0;
+    line-height: 125%;
+}
+
+/*contenidor mida 70%, posició relativa i centrat amb marge left*/
+/*mida mínima de 400px per pantalles petites*/
+#principal {
+    position: relative;
+    left: 15%;
+    width: 70%;
+    min-width: 400px;
+    text-align: left;
+    /*background-color: hsl(0, 0%, 94%);*/
+    
+}
+
+/*header 100% = 75% de principal*/
+header {
+    width: 100%;
+    min-width: 400px;
+    display: inline-flex;
+    border: solid 1px gold;
+    padding-bottom: 2%;
+    /*background-color: hsl(0, 7%, 92%);*/
+}
+
+/*elements header inline i flotant a l'esquerre*/
+header > * {
+  display: inline;
+  float: left;
+}
+
+header h1 {
+  width: 75%;
+}
+
+header form {
+  width: 25%;
+  min-width: 200px;
+  padding-top: 1.2%;
+  /*background-color: aquamarine;*/
+}
+
+/*perquè input baixi respecte el text*/
+header form input {
+  display: block;
+  width: 70%;
+  border-radius: 5px;
+  border-color: lightgray;
+}
+
+/*menu ample 100 = 75 del principal*/
+nav {
+    width: 100%;
+    min-width: 400px;
+    background-color: hsl(0, 7%, 90%);
+    display: block;
+}
+
+nav ul {
+    padding: 0;
+    display: block;
+    float: left;
+    width: 100%;
+    margin: 0;
+    border-width: 0 1px 1px 1px;
+    border-style: solid;
+    border-color: white;
+    /*background-color: aquamarine;*/
+}
+
+nav ul li {
+    display: block;
+    float: left;
+    margin: 1%;
+    margin-right: 4%;
+    /*background-color: hsl(0, 100%, 60%);*/
+}
+
+/*totes les seccions filles de principal*/
+#principal > section {
+  display: block;
+  float: left;
+  min-width: 250px; /*pantalles petites, a sota*/
+}
+
+#news {
+  width: 25%;
+  /*background-color: hsl(0, 7%, 85%);*/
+}
+#apartats {
+  width: 50%;
+  /*background-color: hsl(0, 7%, 80%);*/
+}
+#altres {
+  width: 25%;
+  /*background-color: hsl(0, 7%, 75%);*/
+}
+
+#peu {
+  width: 100%;
+  /*background-color: hsl(0, 7%, 70%);*/
+}
+
+section p {
+    /*padding: 0.1%;*/
+    margin-right: 2%;
+
+}
+
+footer {
+    width: 99%;
+    float: left;
+    margin-left: 1%;
+}
+
+</style>
+
+<!-- estils aleon -->
+<!--<link rel="stylesheet" type="text/css" href="css/aleon.css" >-->
+
+</head>
+<body>
+
+<section id = 'principal'>
+<header>
+<h1>TÍTOL PRINCIPAL</h1>
+
+<form action="http://www.google.es" method="get">
+    Cercar: <input name="q" type="text" id="q" />
+</form>
+</header>
+
+<nav>
+  <ul>
+  <li><a href="#">Uno</a></li>
+  <li><a href="#">Dos</a></li>
+  <li><a href="#">Tres</a></li>
+  <li><a href="#">Quatre</a></li>
+  </ul>
+</nav>
+
+<section id = 'news'>
+  <h3><a href="#">News</a></h3>
+  <p><span class="fecha">01/01/2012</span> <a href="#">Primera Noticia</a></p>
+  <p><span class="fecha">01/02/2012</span> <a href="#">Segona Noticia</a></p>
+
+  <p><span class="fecha">01/03/2012</span> <a href="#">Tercera Noticia</a></p>
+  <p><span class="fecha">01/04/2012</span> <a href="#">Quarta  Noticia</a></p>
+  				
+  <h3><a href="#">Links </a></h3>
+
+  <ul>
+	  <li><a href="#">Un Un </a></li>
+	  <li><a href="#">Dos Dos</a></li>
+	  <li><a href="#">Tres Tres</a></li>
+  </ul>
+
+  <h3><a href="#">Publicitat</a></h3>
+  <p>Abcd abc ab abcde abcd  abc ab abcde abcd  abc ab abcde abcd  abc ab abcde abcd  abc ab abcde abcd  abc ab abcde abcd  abc ab abcde abcd  abc ab abcde abcd</p>
+  <p>Dcba cba edcba dcba ba  cba edcba dcba ba  cba edcba dcba ba  cba edcba dcba ba  cba edcba dcba ba  cba edcba dcba ba  cba edcba dcba ba  cba edcba dcba ba</p>
+  <p><a href="#">Més...</a></p>
+</section>
+
+<section id = 'apartats'>
+  <h2>Apartat 1</h2>
+	
+  <p>Apartat 1 uno, abc abcd abcde abcdef  abc abcd abcde abcdef  abc abcd abcde abcdef  abc abcd abcde abcdef  abc abcd abcde abcdef  abc abcd abcde abcdef  abc abcd abcde abcdef  abc abcd abcde abcdef  abc abcd abcde abcdef.</p>
+  <p>Ab abc ab abcde abcd  abc ab abcde abcd  abc ab abcde abcd  abc ab abcde abcd  abc ab abcde abcd  abc ab abcde abcd  abc ab abcde abcd  abc ab abcde abcd  abc ab abcde abcd  abc ab abcde abcd  abc ab abcde abcd  abc ab abcde abcd  abc ab abcde abcd  abc ab abcde abcd.</p>
+  <p>Abcc ab ba abcddee abc  ab ba abcddee abc  ab ba abcddee abc  ab ba abcddee abc  ab ba abcddee abc  ab ba abcddee abc  ab ba abcddee abc  ab ba abcddee abc  ab ba abcddee abc  ab ba abcddee abc  ab ba abcddee abc  ab ba.</p>
+  <p><a href="#">Més...</a></p>
+
+  <h2>Apartat 2</h2>
+
+  <p>Abc cc ab ba abcddee abc  ab ba abcddee abc  ab ba abcddee abc  ab ba abcddee abc  ab ba abcddee abc  ab ba abcddee abc  ab ba abcddee abc  ab ba abcddee abc  ab ba abcddee abc  ab ba abcddee abc.</p>
+  <p>Ab ab ba aaaa abc abde  ab ba aaaa abc abde  ab ba aaaa abc abde  ab ba aaaa abc abde  ab ba aaaa abc abde  ab ba aaaa abc abde </p>
+  <p><a href="#">Més...</a></p>
+</section>
+
+<section id = 'altres'>
+  <h2>Altres 1</h2>
+  <p>Lorem Ipsum es simplemente el texto de relleno de las imprentas y archivos de texto. Lorem Ipsum ha sido el texto de relleno estándar de las industrias desde el año 1500, cuando un impresor (N. del T. persona que se dedica a la imprenta) desconocido usó una galería de textos y los mezcló de tal manera que logró hacer un libro de textos especimen.</p>
+  <p><a href="#">Més...</a></p>
+
+	
+  <h2>Altres 2</h2>
+  <p>No sólo sobrevivió 500 años, sino que tambien ingresó como texto de relleno en documentos electrónicos, quedando esencialmente igual al original. Fue popularizado en los 60s con la creación de las hojas "Letraset", las cuales contenian pasajes de Lorem Ipsum, y más recientemente con software de autoedición, como por ejemplo Aldus PageMaker, el cual incluye versiones de Lorem Ipsum.</p>
+  <p><a href="#">Més...</a></p>
+
+</section>
+
+<section id ='peu'>
+  <a href="#">Antes</a> |
+  <a href="#">Despues</a> |
+  <a href="#">Ultimo</a> |
+  <a href="#">Penultimo</a> |
+  <a href="#">Siguiente</a> |
+  <a href="#">Anterior</a>
+		
+  &copy; Copyright 2019
+</section>
+</section>
+
+<footer><p></br>© Aleix Leon 2021-22</p></footer>
+
+</body>
+</html>

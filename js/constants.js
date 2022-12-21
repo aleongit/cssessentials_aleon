@@ -236,5 +236,13 @@ const ESSENTIALS = [
     subtitle: "Exemple de maquetació fluïda",
     text: `Fluid or Elastic or Liquid Layout is a layout in which the width of main container is flexible( in percentage). Whatever the screen-size is, the layout will remain same`,
   },
+  {
+    id: 33,
+    href: `essentials/33.html`,
+    category: CATEGORIES.csslayouts,
+    title: "CSS3 Old Style",
+    subtitle: "Exemple de maquetació old style",
+    text: `Old Style works!`,
+  },
 
 ];
