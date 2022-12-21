@@ -65,6 +65,12 @@ p {
   margin: 1rem 0;
 }
 
+.num {
+  font-weight: 900;
+  font-family: monospace;
+  margin: 0;
+}
+
 footer p {
   text-align: center;
 }
