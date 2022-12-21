@@ -12,6 +12,10 @@ const CATEGORIES = {
     title: "CSS3",
     color: "244 67 54", //vermell
   },
+  csslayouts: {
+    title: "CSS Layouts",
+    color: "54 146 244", //blau
+  },
 };
 
 //object
@@ -216,4 +220,21 @@ const ESSENTIALS = [
     subtitle: "Exemple d'una pàgina HTML5 amb CSS3",
     text: `CSS Selectors: Simple selectors (name, id, class), Combinator selectors, Pseudo-class selectors, Pseudo-elements selectors, Attribute selectors`,
   },
+  {
+    id: 31,
+    href: `essentials/31.html`,
+    categorty: CATEGORIES.csslayouts,
+    title: "CSS3 Fixed Layout",
+    subtitle: "Exemple de maquetació fixa",
+    text: `CSS Fixed layouts are layouts with fixed width in px or em, exp 960px, 1200px, 1170px, 1320px etc. The width of layout is fixed, that's why its called fixed layout.`,
+  },
+  {
+    id: 32,
+    href: `essentials/32.html`,
+    categorty: CATEGORIES.csslayouts,
+    title: "CSS3 Liquid Layout 1",
+    subtitle: "Exemple de maquetació fluïda",
+    text: `Fluid or Elastic or Liquid Layout is a layout in which the width of main container is flexible( in percentage). Whatever the screen-size is, the layout will remain same`,
+  },
+
 ];
