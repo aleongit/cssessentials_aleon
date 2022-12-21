@@ -28,6 +28,10 @@ const CATEGORIES = {
     title: "CSS Forms",
     color: "255 152 0", //taronja
   },
+  cssresponsive: {
+    title: "CSS Responsive",
+    color: "255 87 34", //roig
+  },
 };
 
 //object
@@ -323,5 +327,38 @@ const ESSENTIALS = [
     text: `Styling Input Fields, Padded Inputs, Bordered Inputs, Colored Inputs, 
     Focused Inputs, Styling Textareas, Styling Select Menus, Styling Input Buttons, 
     Responsive Form`,
+  },
+  {
+    id: 71,
+    href: `essentials/71.html`,
+    category: CATEGORIES.cssresponsive,
+    title: "CSS3 Responsive 1",
+    subtitle: "Exemples amb responsiu bàsic",
+    text: `Responsive web design makes your web page look good on all devices.
+    Responsive web design uses only HTML and CSS.
+    Responsive web design is not a program or a JavaScript.
+    Viewport: The viewport is the user's visible area of a web page`,
+  },
+  {
+    id: 72,
+    href: `essentials/72.html`,
+    category: CATEGORIES.cssresponsive,
+    title: "CSS3 Responsive 2",
+    subtitle: "Exemples amb responsiu bàsic",
+    text: `Responsive web design makes your web page look good on all devices.
+    Responsive web design uses only HTML and CSS.
+    Responsive web design is not a program or a JavaScript.
+    Viewport: The viewport is the user's visible area of a web page`,
+  },
+  {
+    id: 73,
+    href: `essentials/73.html`,
+    category: CATEGORIES.cssresponsive,
+    title: "CSS3 Responsive 3",
+    subtitle: "Exemples amb responsiu bàsic",
+    text: `Responsive web design makes your web page look good on all devices.
+    Responsive web design uses only HTML and CSS.
+    Responsive web design is not a program or a JavaScript.
+    Viewport: The viewport is the user's visible area of a web page`,
   },
 ];
