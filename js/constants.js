@@ -48,7 +48,10 @@ const CATEGORIES = {
     title: "HTML Canvas",
     color: "64 200 217", //cian
   },
-
+  css3d: {
+    title: "HTML 3D",
+    color: "0 150 136", //verd
+  },
   cssprojects: {
     title: "CSS Projects",
     color: "224 224 224", //gris
@@ -564,7 +567,14 @@ const ESSENTIALS = [
     The <canvas> element is only a container for graphics. You must use JavaScript to actually draw the graphics.   
     Canvas has several methods for drawing paths, boxes, circles, text, and adding images.`,
   },
-
+  {
+    id: 131,
+    href: `essentials/131.html`,
+    category: CATEGORIES.css3d,
+    title: "CSS 3D Transforms",
+    subtitle: "Exemple d'un Carousel animat i 3D",
+    text: `CSS also supports 3D transformations. transform: rotateX(), rotateY(), rotateZ(), transform-style: preserve-3d, perspective, perspective-origin`,
+  },
   {
     id: 991,
     href: `essentials/991.html`,
