@@ -1,0 +1,224 @@
+<!doctype html>
+<html lang="ca"> <!-- meta idioma -->
+
+<head>
+
+    <meta charset="utf-8"><!--meta joc de caràcters -->
+    <meta name="viewport" content="width=device-width, initial-scale=1"><!-- etiqueta per HTML responsive -->
+    <meta name="description" content="">
+    <meta name="author" content="Aleix Leon">
+
+<title>CSS3-EX-911_aleon</title><!-- títol de la web -->
+
+<!-- CSS interns -->
+<style>
+
+@import url(http://fonts.googleapis.com/css?family=Oswald:400,300);
+@import url(http://fonts.googleapis.com/css?family=Merriweather);
+
+* {
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  font-family: Merriweather;
+}
+
+.wrapper {
+  font-size: 1.5em;
+  font-weight: bold;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  color: black;
+
+}
+
+.header {
+  background:tomato;
+  padding: 1em;
+  text-align:center;
+  flex: 100%;
+  order:1
+}
+
+.header nav {
+  background: deepskyblue;
+}
+
+.header ul {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  list-style-type: none;
+  justify-content: flex-end;
+}
+
+.header nav a {
+  text-decoration: none;
+  padding: 1em;
+  line-height: 3em;
+  color: white;
+  opacity: 0.9;
+}
+
+header nav a:hover {
+  opacity: 1;
+}
+
+.main {
+  background-color: tomato;
+  padding: 0 0 2em;
+  text-align: left;
+  line-height: 1em;
+  flex: 50%;
+  flex-grow: 3;
+  order:3
+}
+
+.main h1, h2, h3 {
+  margin: 1em 0;
+}
+
+.main h1{
+  font-size: 1.4em;
+  line-height: 1.6em;
+}
+
+.main h2 {
+  font-size: 1.3em;
+}
+
+.main h3 {
+  font-size: 1.2em;
+}
+
+.main p {
+  font-size: 0.9em;
+  line-height: 1.2em;
+}
+
+.aside-1 {
+  background:tomato;
+  text-align:center;
+  padding: 0 1em 1em;
+  flex: 20%;
+  flex-grow: 1;
+  order:2
+}
+
+.aside-1 nav {
+  background: deepskyblue;
+  height: 700px;
+}
+
+.aside-1 ul {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  list-style-type: none;
+  justify-content: flex-end;
+}
+
+.aside-1 nav a {
+  line-height: 3em;
+  text-decoration: none;
+  color: black;
+  opacity: 0.8;
+}
+
+.aside-1 nav a:hover {
+  opacity: 1;
+}
+
+.aside-2 {
+  background:deepskyblue;
+  padding: 0 1em 1em;
+  text-align:center;
+  flex: 20%;
+  flex-grow: 1;
+  order: 4;
+}
+
+.footer {
+  background:lightgreen;
+  padding: 1.2em;
+  text-align:center;
+  flex: 100%;
+  order:5
+}
+
+@media screen and (max-width: 800px) {
+
+.wrapper * {
+  padding-left: 0;
+  padding-right: 0;
+}
+
+.main {
+  order: 2;
+}
+
+.main {
+  text-align: center;
+}
+
+.aside-1 nav {
+  height: auto;
+  order: 3;
+}
+
+.wrapper, .header ul  {
+  flex-direction: column;
+  }
+}
+
+</style>
+<!-- estils aleon -->
+<!--<link rel="stylesheet" type="text/css" href="css/aleon.css" >-->
+ 
+</head>
+<body>
+
+  <div class="wrapper">
+    <header class="header">
+      <nav>
+        <ul>
+          <li><a href="#">Home</a></li>
+          <li><a href="#">About</a></li>
+          <li><a href="#">Products</a></li>
+          <li><a href="#">Contact</a></li>
+        </ul>
+        </nav>
+    </header>
+    <article class="main">
+      <section>
+        <article class="breaking">
+          <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/4273/earth-vs-the-flying-saucers.jpg" alt="Photograph of a flying saucer over the US Capitol building">
+            <h1>Washington D.C. Attacked By Flying Saucers</h1>
+            <h2>Dateline Washington D.C.</h2>
+            <h3>Frank Bragg reporting</h3>
+            <p>The country was brought to a standstill today when flying saucers – presumably from Mars, although Venusians have also been suspected – appeared over the nation’s capital, intent on destruction. Curiously, they only attacked Pennsylvania Avenue, and have not appeared elsewhere in the country.</p>
+          </article>
+      </section>
+    </article>
+    <aside class="aside aside-1">
+      <nav>
+        <ul>
+          <li><a href="#">Home</a></li>
+          <li><a href="#">About</a></li>
+          <li><a href="#">Products</a></li>
+          <li><a href="#">Contact</a></li>
+        </ul>
+        </nav>
+
+    </aside>
+    <aside class="aside aside-2">Aside 2</aside>
+    <footer class="footer">Footer</footer>
+   </div>  
+
+
+<div><p></br>© Aleix Leon 2021-22</p></div>
+</body>
+</html>

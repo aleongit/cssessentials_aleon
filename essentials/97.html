@@ -1,0 +1,108 @@
+<!doctype html>
+<html lang="ca"> <!-- meta idioma -->
+
+<head>
+
+    <meta charset="utf-8"><!--meta joc de caràcters -->
+    <meta name="viewport" content="width=device-width, initial-scale=1"><!-- etiqueta per HTML responsive -->
+    <meta name="description" content="">
+    <meta name="author" content="Aleix Leon">
+
+<title>CSS3-EX-97_aleon</title><!-- títol de la web -->
+
+<!-- CSS interns -->
+<style>
+
+body {
+  padding: 2em;
+
+}
+
+.wrapper {
+  font-size: 1.5em;
+  font-weight: bold;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  color: black;
+
+}
+
+.header {
+  background:tomato;
+  padding: 5px;
+  text-align:center;
+  flex-basis: 100%;
+  order:1
+}
+
+.main {
+  background-color: deepskyblue;
+  padding: 5px;
+  text-align:left;
+  flex-grow: 3;
+  order:3
+}
+
+.aside-1 {
+  background:orange;
+  padding: 5px;
+  text-align:center;
+  flex-grow: 1;
+  order:2
+}
+
+.aside-2 {
+  background:violet;
+  padding: 5px;
+  text-align:center;
+  flex-grow: 1;
+  order:4
+}
+
+.footer {
+  background:lightgreen;
+  padding: 5px;
+  text-align:center;
+  flex-basis: 100%;
+  order:5
+}
+
+@media screen and (max-width: 900px) {
+.main {
+  order: 2;
+  flex: 100%;
+  text-align: center;
+  }
+
+.aside-1 {
+  order:3;
+  }
+}
+
+@media screen and (max-width: 500px) {
+
+  .wrapper {
+  flex-direction: column;
+  }
+}
+
+</style>
+<!-- estils aleon -->
+<!--<link rel="stylesheet" type="text/css" href="css/aleon.css" >-->
+ 
+</head>
+<body>
+
+  <div class="wrapper">
+    <header class="header">Header</header>
+    <article class="main">Main</article>
+    <aside class="aside aside-1">Aside 1</aside>
+    <aside class="aside aside-2">Aside 2</aside>
+    <footer class="footer">Footer</footer>
+   </div>  
+
+
+<div><p></br>© Aleix Leon 2021-22</p></div>
+</body>
+</html>

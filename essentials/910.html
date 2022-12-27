@@ -8,86 +8,95 @@
     <meta name="description" content="">
     <meta name="author" content="Aleix Leon">
 
-<title>CSS3-EX-81_aleon</title><!-- títol de la web -->
+<title>CSS3-EX-910_aleon</title><!-- títol de la web -->
 
 <!-- CSS interns -->
 <style>
 
-  #id_cap { 
-    grid-column: 1 / 4;
-    grid-row: 1 / 2;
+* {
+  padding: 0;
+  margin: 0;
+}
 
+#main {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    background-color: #fff;
+    color: #444;
+  }
+
+  #id_cap { 
     background-color: #b380ff;
     color: white;
     font-size: 2em;
     border: 1px solid black;
     border-radius: 5px;
     padding: 5px;
+    margin: 5px;
     line-height: 110px;
+    flex: 100%;
+    
   }
 
   #id_nav { 
-    grid-column: 1 / 2;
-    grid-row: 2 / 3;
-
     background-color: #33b5e5;
     color: black;
     font-size: 1.5em;
     border: 0.5px solid lightgrey;
     border-radius: 5px;
     padding: 5px;
+    margin: 5px;
+    flex: 10%;
+
   }
 
   #id_art { 
-    grid-column: 2 / 3;
-    grid-row: 2 / 3;
-
     background-color: white;
     color: black;
     font-size: 1.5em;
     border: 0.5px solid lightgrey;
     border-radius: 5px;
     padding: 5px;
+    margin: 5px;
+    flex: 60%;
+    height: 450px;
   }
     
   #id_inf { 
-    grid-column: 3 / 4;
-    grid-row: 2 / 3;
-
     background-color: #33b5e5;
     color: black;
     font-size: 1.5em;
     border: 0.5px solid lightgrey;
     border-radius: 5px;
     padding: 5px;
+    margin: 5px;
+    flex: 10%;
 
   }
 
   #id_peu { 
-    grid-column: 1 / 4;
-    grid-row: 3 / 4;
-
     background-color: #b380ff;
     color: white;
     font-size: 1.5em;
     border: 1px solid black;
     border-radius: 5px;
     padding: 5px;
+    margin: 5px;
+    line-height: 100px;
+    flex: 100%;
   }
 
-  #main {
-    display: grid;
-    grid-gap: 10px;
-    grid-template-columns: 200px 1fr 200px;
-    grid-template-rows:  120px 400px 100px;
-    background-color: #fff;
-    color: #444;
-  }
-  
   footer {
     display: block;
     float:left;
   }
+
+@media screen and (max-width: 600px) {
+  #main {
+  flex-direction: column;
+}
+}
 
 </style>
 <!-- estils aleon -->

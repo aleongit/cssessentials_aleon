@@ -10,6 +10,7 @@ Recopilació d'exercicis essencials CSS by aleon.
 - **CSS3 Forms** 61 to 63
 - **CSS3 Responsive** 71 to 73
 - **CSS3 Grid** 81 to 83
+- **CSS3 Flex** 91 to 911
 
 
 ## Requeriments
