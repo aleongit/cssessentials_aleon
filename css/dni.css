@@ -1,0 +1,284 @@
+*, *:before, *:after {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Montserrat', 'Helvetica', sans-serif;
+    font-size: 14px;
+    line-height: 1.3;
+    background-color: #808080;
+    background-image: linear-gradient(to right, #202020, #808080);
+}
+
+@media screen and (min-width: 400px) {
+    body {
+        overflow-x: hidden;
+    }
+}
+
+@font-face {
+    font-family: firma;
+    src: url(../font/Creattion\ Demo.otf);
+  }
+
+.contenidor {
+    /*width: 100%;*/
+    height: 100vh;
+    /*text-align: right;*/
+    /*display: flex;*/
+    /*flex-direction: column;*/
+    /*justify-content: center;*/
+    /*align-items: center;*/
+    display: table;
+    margin: auto;
+    padding-top: 1rem;
+}
+
+.dni {
+    width: 400px;
+    height: 250px;
+    text-align: left;
+    margin-bottom: 2em;
+}
+
+.fons {
+    position: absolute;
+    width: inherit;
+    height: inherit;
+    border-radius: 15px;
+    color: black;
+    background-color: white;
+    text-shadow: 0 1px 1px rgba(0, 0, 0, .3);
+    box-shadow: 0 1px 10px 1px rgba(0, 0, 0, .3);
+    backface-visibility: hidden;
+
+    background-image: 
+    linear-gradient(to right, rgba(243, 222, 31, 0.3), rgba(255, 44, 44, 0.3)),
+    repeating-linear-gradient(45deg, transparent, transparent 1px, rgba(175, 7, 7, 0.616) 1.5px),
+    repeating-radial-gradient(farthest-corner at 0 0,
+                            rgba(175, 7, 7, 0) 1px,
+                            rgba(175, 7, 7, 0.1) 1.5px,
+                            rgba(175, 7, 7, 0.2) 1.8px, 
+                            rgba(175, 7, 7, 0.3) 2px
+                            );
+
+    overflow: hidden;
+    transform: translateZ(0);
+}
+
+/*fons amb línies ondulades */
+.ones {
+    position: absolute;
+    top:2px;
+    left: 0;
+    width: 100%;
+    height: 35px;
+    /*background-image: 
+    repeating-linear-gradient(180deg, transparent, transparent 1px, rgba(0, 0, 0, 0.39) 1.5px);*/
+    background:
+    radial-gradient(circle at 50% 0%, transparent 20%, rgba(255,255,255,.3) 21%, rgba(255,255,255,.3) 22%, transparent 30%, transparent) -6px -6px,
+    radial-gradient(circle at 50% 100%, transparent 20%, rgba(255,255,255,.3) 21%, rgba(255,255,255,.3) 22%, transparent 30%, transparent) 0 -6px;
+    /*background-color: rgba(112, 128, 144, 0.274);*/
+    background-size:9px 9px;
+
+}
+
+.backtext {
+    position: absolute;
+    right: -43px;
+    height: inherit;
+    font-size: 260px;
+    top: -35px;
+    opacity: 0.1;
+    font-weight: 400;
+}
+
+.estelada
+{
+    background: linear-gradient(to left, rgba(243, 222, 31,0) 50%,
+              rgb(248, 160, 102)), url(../img/estelada_negra.png);
+    /*background-image: url(estelada_negra.png);*/
+    background-repeat: no-repeat;
+    background-size: contain;
+    position: absolute;
+    width: 100%;
+    height: inherit;
+    opacity: 0.1;
+    top: 0;
+    left: 159px;
+}
+
+.firma {
+    position: absolute;
+    font-family: firma;
+    font-size: 55px;
+    text-transform: capitalize;
+    bottom: 0;
+    left: 165px;
+}
+
+.bandera {
+    position: absolute;
+    right: 25px;
+    bottom: 10px;
+    display: flex;
+}
+.quadre {
+    width: 10px;
+    height: 10px;
+}
+.quadre_vermell {
+    background-color: rgba(255, 0, 0, 0.3);
+}
+.quadre_groc {
+    background-color: rgba(255, 209, 0, .3);
+}
+
+.logo_codi {
+    position: fixed;
+    top: 35px;
+    left: 300px;
+    font-size: 8px;
+    padding: 6px 4px;
+    border-radius: 25px;
+    border: 1px solid black;
+    box-shadow: 1px 1px 5px #666,
+                0 -1px 1px #222 inset;
+}
+
+.taula {
+    display: table;
+    border-spacing: 5px;
+    padding-left: 10px;
+    padding-top: 10px;
+}
+
+.fila{
+    display: table-row;
+}
+
+.col{
+    display: table-cell;
+    float: left;
+}
+
+.col20 {
+    width: 20%;
+}
+
+.col40 {
+    width: 38%;
+}
+
+.col60 {
+    width: 62%;
+}
+
+.col100 {
+    width: 100%;
+}
+
+.cat {
+    font-size: 16px;
+    /*background-color: #eb001b;*/
+    background: repeating-linear-gradient(
+        to right,
+        rgba(255, 209, 0, 0.2),
+        rgba(255, 209, 0, 0.2) 16px, 
+        rgba(255, 0, 0, 0.2) 16px,
+        rgba(255, 0, 0, 0.2) 33px
+        )
+}
+
+.doc {
+    font-size: 12px;
+    padding-top: 3.5px;
+    padding-left: 5px;
+    /*background-color: gold;*/
+}
+
+
+.foto {
+    padding-bottom: 20px;
+    background-color: white;
+}
+
+.num_dni {
+    position: relative;
+    justify-content: space-between;
+    text-align: center;
+    align-items: center;
+    font-size: 23px;
+    font-family: 'cc font', monospace;
+}
+
+.t_dni {
+    font-size: small;
+    vertical-align: middle;
+}
+
+.dades {
+    display: table;
+    padding-left: 5px;
+    text-transform: uppercase;
+    font-family: 'cc font', monospace;
+    /*font-size: 14px;*/
+    line-height: 12px;
+    border-spacing: 3px;
+}
+
+.titol {
+    font-size: 8px;
+}
+
+footer {
+    color: whitesmoke;
+    text-align: center;
+    text-transform: uppercase;
+    font-family: monospace;
+}
+
+/* un extra, trobat fet ______________________________________________ */
+.chip {
+    position: absolute;
+    top: 35px;
+    left: 300px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 50px;
+    height: 40px;
+    border-radius: 5px;
+    background-image: linear-gradient(to bottom left, #ffecc7, #d0b978);
+    overflow: hidden;
+}
+
+.chip__line {
+    position: absolute;
+    width: 100%;
+    height: 1px;
+    background-color: #333;
+}
+.chip__line:nth-child(1) {
+    top: 13px;
+}
+.chip__line:nth-child(2) {
+    top: 20px;
+}
+.chip__line:nth-child(3) {
+    top: 28px;
+}
+.chip__line:nth-child(4) {
+    left: 25px;
+    width: 1px;
+    height: 50px;
+}
+.chip__main {
+    width: 20px;
+    height: 25px;
+    border: 1px solid #333;
+    border-radius: 3px;
+    background-image: linear-gradient(to bottom left, #efdbab, #e1cb94);
+    z-index: 1;
+}
+

@@ -40,6 +40,10 @@ const CATEGORIES = {
     title: "CSS Flex",
     color: "201 71 232", //lila
   },
+  cssprojects: {
+    title: "CSS Projects",
+    color: "224 224 224", //gris
+  },
 };
 
 //object
@@ -480,5 +484,13 @@ const ESSENTIALS = [
     title: "CSS3 Flex 11",
     subtitle: "Exemples amb flex",
     text: `The Flexible Box Module, usually referred to as flexbox, was designed as a one-dimensional layout model, and as a method that could offer space distribution between items in an interface and powerful alignment capabilities.`,
+  },
+  {
+    id: 991,
+    href: `essentials/991.html`,
+    category: CATEGORIES.cssprojects,
+    title: "CSS3 Project 1",
+    subtitle: "Exemple de DNI amb CSS",
+    text: `Un document d'identitat és un carnet emès per una autoritat administrativa competent per identificar de forma personal els ciutadans d'un estat.`,
   },
 ];
