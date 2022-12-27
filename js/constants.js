@@ -44,6 +44,11 @@ const CATEGORIES = {
     title: "CSS Animations",
     color: "135 151 241", //blau
   },
+  canvas: {
+    title: "HTML Canvas",
+    color: "64 200 217", //cian
+  },
+
   cssprojects: {
     title: "CSS Projects",
     color: "224 224 224", //gris
@@ -529,6 +534,37 @@ const ESSENTIALS = [
     subtitle: "Exemples d'story board amb CSS",
     text: `@keyframes, animation-name, animation-duration, animation-delay, animation-iteration-count, animation-direction, animation-timing-function, animation-fill-mode, animation`,
   },
+  {
+    id: 121,
+    href: `essentials/121.html`,
+    category: CATEGORIES.canvas,
+    title: "HTML Canvas 1",
+    subtitle: "Exemples amb Canvas",
+    text: `The HTML <canvas> element is used to draw graphics, on the fly, via JavaScript.
+    The <canvas> element is only a container for graphics. You must use JavaScript to actually draw the graphics.   
+    Canvas has several methods for drawing paths, boxes, circles, text, and adding images.`,
+  },
+  {
+    id: 122,
+    href: `essentials/122.html`,
+    category: CATEGORIES.canvas,
+    title: "HTML Canvas 2",
+    subtitle: "Exemples amb Canvas",
+    text: `The HTML <canvas> element is used to draw graphics, on the fly, via JavaScript.
+    The <canvas> element is only a container for graphics. You must use JavaScript to actually draw the graphics.   
+    Canvas has several methods for drawing paths, boxes, circles, text, and adding images.`,
+  },
+  {
+    id: 123,
+    href: `essentials/123.html`,
+    category: CATEGORIES.canvas,
+    title: "HTML Canvas 3",
+    subtitle: "Animació amb Canvas",
+    text: `The HTML <canvas> element is used to draw graphics, on the fly, via JavaScript.
+    The <canvas> element is only a container for graphics. You must use JavaScript to actually draw the graphics.   
+    Canvas has several methods for drawing paths, boxes, circles, text, and adding images.`,
+  },
+
   {
     id: 991,
     href: `essentials/991.html`,

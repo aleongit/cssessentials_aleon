@@ -11,9 +11,10 @@ Recopilació d'exercicis essencials CSS by aleon.
 - **CSS3 Responsive** 71 to 73
 - **CSS3 Grid** 81 to 83
 - **CSS3 Flex** 91 to 911
-- **CSS3 Project: DNI with CSS** 991
 - **CSS3 Animations** 101 to 105
 - **HTML5 Canvas** 121 to 123
+
+- **CSS3 Project: DNI with CSS** 991
 
 
 ## Requeriments
