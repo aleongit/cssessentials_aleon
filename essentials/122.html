@@ -1,31 +1,32 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <title>Exemple Canvas</title>
-    <script type="text/javascript">
+
+<head>
+  <title>Exemple Canvas</title>
+  <script type="text/javascript">
     function draw() {
       var canvas = document.getElementById('canvas');
-        if (canvas.getContext) {
-          var ctx = canvas.getContext('2d');
+      if (canvas.getContext) {
+        var ctx = canvas.getContext('2d');
 
-          ctx.beginPath();
-          ctx.fillStyle = "Dodgerblue";
-          ctx.moveTo(75, 50);
-          ctx.lineTo(100, 75);
-          ctx.lineTo(100, 25);
-          ctx.fill();
-        }
+        ctx.beginPath();
+        ctx.fillStyle = "Dodgerblue";
+        ctx.moveTo(75, 50);
+        ctx.lineTo(100, 75);
+        ctx.lineTo(100, 25);
+        ctx.fill();
+      }
     }
-    </script>
-    <style type="text/css">
+  </script>
+  <style type="text/css">
+    canvas {
+      border: 1px solid black;
+    }
+  </style>
+</head>
 
-      canvas { 
-          border: 1px solid black; 
-        }
+<body onload="draw();">
+  <canvas id="canvas" width="200" height="200"></canvas>
+</body>
 
-    </style>
-  </head>
-  <body onload="draw();">
-      <canvas id="canvas" width="200" height="200"></canvas>
-  </body>
 </html>

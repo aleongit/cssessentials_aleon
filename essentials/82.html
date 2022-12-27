@@ -3,130 +3,132 @@
 
 <head>
 
-    <meta charset="utf-8"><!--meta joc de caràcters -->
-    <meta name="viewport" content="width=device-width, initial-scale=1"><!-- etiqueta per HTML responsive -->
-    <meta name="description" content="">
-    <meta name="author" content="Aleix Leon">
+  <meta charset="utf-8"><!--meta joc de caràcters -->
+  <meta name="viewport" content="width=device-width, initial-scale=1"><!-- etiqueta per HTML responsive -->
+  <meta name="description" content="">
+  <meta name="author" content="Aleix Leon">
 
-<title>CSS3-EX-82_aleon</title><!-- títol de la web -->
+  <title>CSS3-EX-82_aleon</title><!-- títol de la web -->
 
-<!-- CSS interns -->
-<style>
+  <!-- CSS interns -->
+  <style>
+    #id_cap {
 
-  #id_cap { 
+      grid-area: cap;
 
-    grid-area: cap;
+      background-color: #b380ff;
+      color: white;
+      font-size: 2em;
+      border: 1px solid black;
+      border-radius: 5px;
+      padding: 5px;
+      line-height: 110px;
+    }
 
-    background-color: #b380ff;
-    color: white;
-    font-size: 2em;
-    border: 1px solid black;
-    border-radius: 5px;
-    padding: 5px;
-    line-height: 110px;
-  }
+    #id_nav {
 
-  #id_nav { 
+      grid-area: nav;
 
-    grid-area: nav;
+      background-color: #33b5e5;
+      color: black;
+      font-size: 1.5em;
+      border: 0.5px solid lightgrey;
+      border-radius: 5px;
+      padding: 5px;
+    }
 
-    background-color: #33b5e5;
-    color: black;
-    font-size: 1.5em;
-    border: 0.5px solid lightgrey;
-    border-radius: 5px;
-    padding: 5px;
-  }
+    #id_art {
 
-  #id_art {
+      grid-area: art;
 
-    grid-area: art;
+      background-color: white;
+      color: black;
+      font-size: 1.5em;
+      border: 0.5px solid lightgrey;
+      border-radius: 5px;
+      padding: 5px;
+    }
 
-    background-color: white;
-    color: black;
-    font-size: 1.5em;
-    border: 0.5px solid lightgrey;
-    border-radius: 5px;
-    padding: 5px;
-  }
-    
-  #id_inf { 
+    #id_inf {
 
-    grid-area: inf;
+      grid-area: inf;
 
-    background-color: #33b5e5;
-    color: black;
-    font-size: 1.5em;
-    border: 0.5px solid lightgrey;
-    border-radius: 5px;
-    padding: 5px;
-
-  }
-
-  #id_peu {
-
-    grid-area: peu;
- 
-    background-color: #b380ff;
-    color: white;
-    font-size: 1.5em;
-    border: 1px solid black;
-    border-radius: 5px;
-    padding: 5px;
-  }
-
-  #main {
-    display: grid;
-    grid-gap: 10px;
-    grid-template-columns: 200px 1fr 200px;
-    grid-template-rows:  120px 400px 100px;
-
-    grid-template-areas:
-     "cap cap cap"
-     "nav art inf"  
-     "peu peu peu";
-
-    background-color: #fff;
-    color: #444;
-  }
-
-  @media (max-width: 740px)  {
-
-    #main {
-      grid-template-columns: 1fr;
-      grid-template-rows:  120px 80px 250px 80px 100px;
-      grid-template-areas:
-        "cap"
-        "nav"
-        "art" 
-        "inf"   
-        "peu";
-      min-width: 740px;
-
+      background-color: #33b5e5;
+      color: black;
+      font-size: 1.5em;
+      border: 0.5px solid lightgrey;
+      border-radius: 5px;
+      padding: 5px;
 
     }
-  }
-  
-  footer {
-    display: block;
-    float:left;
-  }
 
-</style>
-<!-- estils aleon -->
-<!--<link rel="stylesheet" type="text/css" href="css/aleon.css" >-->
- 
+    #id_peu {
+
+      grid-area: peu;
+
+      background-color: #b380ff;
+      color: white;
+      font-size: 1.5em;
+      border: 1px solid black;
+      border-radius: 5px;
+      padding: 5px;
+    }
+
+    #main {
+      display: grid;
+      grid-gap: 10px;
+      grid-template-columns: 200px 1fr 200px;
+      grid-template-rows: 120px 400px 100px;
+
+      grid-template-areas:
+        "cap cap cap"
+        "nav art inf"
+        "peu peu peu";
+
+      background-color: #fff;
+      color: #444;
+    }
+
+    @media (max-width: 740px) {
+
+      #main {
+        grid-template-columns: 1fr;
+        grid-template-rows: 120px 80px 250px 80px 100px;
+        grid-template-areas:
+          "cap"
+          "nav"
+          "art"
+          "inf"
+          "peu";
+        min-width: 740px;
+
+
+      }
+    }
+
+    footer {
+      display: block;
+      float: left;
+    }
+  </style>
+  <!-- estils aleon -->
+  <!--<link rel="stylesheet" type="text/css" href="css/aleon.css" >-->
+
 </head>
+
 <body>
 
-<div id="main">
+  <div id="main">
     <div id="id_cap">Capçalera</div>
     <div id="id_nav">Navegació</div>
     <div id="id_art">Articles</div>
     <div id="id_inf">Info Articles</div>
     <div id="id_peu">Peu de pàgina</div>
-</div>
+  </div>
 
-<footer><p></br>© Aleix Leon 2021-22</p></footer>
+  <footer>
+    <p></br>© Aleix Leon 2021-22</p>
+  </footer>
 </body>
+
 </html>

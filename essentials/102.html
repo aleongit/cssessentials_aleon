@@ -1,59 +1,58 @@
 <!doctype html>
 <html lang="ca">
- 
+
 <head>
-<!-- Required meta tags -->
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-    
-<title>Animacions 2 by aleon</title>
-  
-<style type="text/css">
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
 
-div.bolaNadal {
-  /* Posicionem al contenidor pare */
-  position: relative;
-  /*left: 10%;
+  <title>Animacions 2 by aleon</title>
+
+  <style type="text/css">
+    div.bolaNadal {
+      /* Posicionem al contenidor pare */
+      position: relative;
+      /*left: 10%;
   top: 10%;*/
-  width: 20%;
-  height:0;
-  /* Canviant height per padding aconseguim no deformar l'esfera */
-  padding-bottom: 20%;
-  /* Imatge de fons, cobertura total */
-  background-image: url("../img/nadal.png");
-  background-size: cover;
-  /* Convertim la imatge en rodona */
-  border-radius: 50%;
-  /* box-shadow: h-offset v-offset blur spread color inset (ombra dintre); */
-  box-shadow: -.75em -.25em 0 0 rgba(0,0,0,.1) inset, .2em .1em 0 0 rgba(255,255,255,.2) inset;
-  /* Animacio */
-  animation: bolas 40s infinite linear;
-}
+      width: 20%;
+      height: 0;
+      /* Canviant height per padding aconseguim no deformar l'esfera */
+      padding-bottom: 20%;
+      /* Imatge de fons, cobertura total */
+      background-image: url("../img/nadal.png");
+      background-size: cover;
+      /* Convertim la imatge en rodona */
+      border-radius: 50%;
+      /* box-shadow: h-offset v-offset blur spread color inset (ombra dintre); */
+      box-shadow: -.75em -.25em 0 0 rgba(0, 0, 0, .1) inset, .2em .1em 0 0 rgba(255, 255, 255, .2) inset;
+      /* Animacio */
+      animation: bolas 40s infinite linear;
+    }
 
-@keyframes bolas {
-  from {
-  /* Posicio inicial imatge de fons */
-  Background-position: 0
-  }
-  to {
-  /* Posicio final. Els px simplement donen mes o menys velocitat i el signe el sentit de gir
+    @keyframes bolas {
+      from {
+        /* Posicio inicial imatge de fons */
+        Background-position: 0
+      }
+
+      to {
+        /* Posicio final. Els px simplement donen mes o menys velocitat i el signe el sentit de gir
   (associat a l'ombra) */
-  Background-position: -1500px
-  }
-}
+        Background-position: -1500px
+      }
+    }
 
-.container {
-  display: flex;
-  justify-content: space-around;
-  flex-wrap: wrap;
-  
-}
-    
-</style>
+    .container {
+      display: flex;
+      justify-content: space-around;
+      flex-wrap: wrap;
+
+    }
+  </style>
 
 </head>
 
-  <!--
+<!--
 ● Exercici Animació 1:
 ● Element 1:
 – Afegir una transició que arranqui quan el cursor es situï a sobre de
@@ -66,11 +65,11 @@ l’element.
 -->
 
 <body>
-<div class="container">
-  <div class="bolaNadal"></div>
-  <div class="bolaNadal"></div>
-  <div class="bolaNadal"></div>
-</div>
+  <div class="container">
+    <div class="bolaNadal"></div>
+    <div class="bolaNadal"></div>
+    <div class="bolaNadal"></div>
+  </div>
 
 
 </body>

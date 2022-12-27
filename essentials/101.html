@@ -1,56 +1,54 @@
 <!doctype html>
 <html lang="ca">
- 
+
 <head>
-<!-- Required meta tags -->
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-    
-<title>Animacions 1 by aleon</title>
-  
-<style type="text/css">
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
 
-@keyframes ani1{
-  from {
-    left:20px;
-    background-color: red;
-  }
+  <title>Animacions 1 by aleon</title>
 
-  50% {
-    background-color: green;
-  }
+  <style type="text/css">
+    @keyframes ani1 {
+      from {
+        left: 20px;
+        background-color: red;
+      }
 
-  to {
-    left:370px;
-    background-color:blue;
-  }
-}
+      50% {
+        background-color: green;
+      }
 
-div {
-position: fixed;
-left:20px;
-background-color: red;
-width:150px;
-height:150px;
-}
+      to {
+        left: 370px;
+        background-color: blue;
+      }
+    }
 
-.primera:hover{
-width:500px;
-background-color: yellow;
-transition: background-color 3s ease-in, width 3s ease-in;
-}
+    div {
+      position: fixed;
+      left: 20px;
+      background-color: red;
+      width: 150px;
+      height: 150px;
+    }
 
-.segona{
-top: 180px;
-animation:
-ani1 5s ease-in-out 1s infinite alternate;
-}
-    
-</style>
+    .primera:hover {
+      width: 500px;
+      background-color: yellow;
+      transition: background-color 3s ease-in, width 3s ease-in;
+    }
+
+    .segona {
+      top: 180px;
+      animation:
+        ani1 5s ease-in-out 1s infinite alternate;
+    }
+  </style>
 
 </head>
 
-  <!--
+<!--
 ● Exercici Animació 1:
 ● Element 1:
 – Afegir una transició que arranqui quan el cursor es situï a sobre de
@@ -64,9 +62,9 @@ l’element.
 
 <body>
 
-<div class="primera"></div>
-<br />
-<div class="segona"></div>
+  <div class="primera"></div>
+  <br />
+  <div class="segona"></div>
 
 </body>
 

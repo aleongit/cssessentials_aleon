@@ -3,86 +3,85 @@
 
 <head>
 
-    <meta charset="utf-8"><!--meta joc de caràcters -->
-    <meta name="viewport" content="width=device-width, initial-scale=1"><!-- etiqueta per HTML responsive -->
-    <meta name="description" content="">
-    <meta name="author" content="Aleix Leon">
+  <meta charset="utf-8"><!--meta joc de caràcters -->
+  <meta name="viewport" content="width=device-width, initial-scale=1"><!-- etiqueta per HTML responsive -->
+  <meta name="description" content="">
+  <meta name="author" content="Aleix Leon">
 
-<title>CSS3-EX-92_aleon</title><!-- títol de la web -->
+  <title>CSS3-EX-92_aleon</title><!-- títol de la web -->
 
-<!-- CSS interns -->
-<style>
+  <!-- CSS interns -->
+  <style>
+    .flex-container {
+      padding: 0;
+      margin: 0;
+      display: flex;
+      flex-wrap: wrap;
+      flex-direction: row;
+      list-style-type: none;
+    }
 
-.flex-container {
-  padding: 0;
-  margin: 0;
-  display: flex;
-  flex-wrap: wrap;
-  flex-direction: row;
-  list-style-type: none;
-}
+    .flex-itemA {
+      background: tomato;
+      padding: 5px;
+      margin: 5px;
+      line-height: 200px;
+      color: white;
+      font-weight: bold;
+      font-size: 100px;
+      text-align: center;
+      flex-basis: 100%;
+      order: 1
+    }
 
-.flex-itemA {
-  background:tomato;
-  padding:5px;
-  margin:5px;
-  line-height: 200px;
-  color:white;
-  font-weight:bold;
-  font-size: 100px;
-  text-align:center;
-  flex-basis: 100%;
-  order:1
-}
+    .flex-itemB {
+      background: black;
+      padding: 5px;
+      margin: 5px;
+      line-height: 200px;
+      color: white;
+      font-weight: bold;
+      font-size: 100px;
+      text-align: center;
+      flex-grow: 3;
+      order: 3
+    }
 
-.flex-itemB {
-  background:black;
-  padding:5px;
-  margin:5px;
-  line-height: 200px;
-  color:white;
-  font-weight:bold;
-  font-size: 100px;
-  text-align:center;
-  flex-grow: 3;
-  order:3
-}
+    .flex-itemC {
+      background: DodgerBlue;
+      padding: 5px;
+      margin: 5px;
+      line-height: 200px;
+      color: white;
+      font-weight: bold;
+      font-size: 100px;
+      text-align: center;
+      flex-grow: 1;
+      order: 2
+    }
 
-.flex-itemC {
-  background:DodgerBlue;
-  padding:5px;
-  margin:5px;
-  line-height: 200px;
-  color:white;
-  font-weight:bold;
-  font-size: 100px;
-  text-align:center;
-  flex-grow: 1;
-  order:2
-}
+    .flex-itemD {
+      background: DodgerBlue;
+      padding: 5px;
+      margin: 5px;
+      line-height: 200px;
+      color: white;
+      font-weight: bold;
+      font-size: 100px;
+      text-align: center;
+      flex-grow: 1;
+      order: 4
+    }
 
-.flex-itemD {
-  background:DodgerBlue;
-  padding:5px;
-  margin:5px;
-  line-height: 200px;
-  color:white;
-  font-weight:bold;
-  font-size: 100px;
-  text-align:center;
-  flex-grow: 1;
-  order:4
-}
+    footer {
+      padding-top: 5em;
+    }
+  </style>
+  <!-- estils aleon -->
+  <!--<link rel="stylesheet" type="text/css" href="css/aleon.css" >-->
 
-footer {
-  padding-top: 5em;
-}
-
-</style>
-<!-- estils aleon -->
-<!--<link rel="stylesheet" type="text/css" href="css/aleon.css" >-->
- 
 </head>
+
 <body>
 
   <ul class="flex-container">
@@ -92,6 +91,9 @@ footer {
     <li class="flex-itemD">D</li>
   </ul>
 
-<footer><p></br>© Aleix Leon 2021-22</p></footer>
+  <footer>
+    <p></br>© Aleix Leon 2021-22</p>
+  </footer>
 </body>
+
 </html>

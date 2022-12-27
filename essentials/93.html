@@ -3,47 +3,46 @@
 
 <head>
 
-    <meta charset="utf-8"><!--meta joc de caràcters -->
-    <meta name="viewport" content="width=device-width, initial-scale=1"><!-- etiqueta per HTML responsive -->
-    <meta name="description" content="">
-    <meta name="author" content="Aleix Leon">
+  <meta charset="utf-8"><!--meta joc de caràcters -->
+  <meta name="viewport" content="width=device-width, initial-scale=1"><!-- etiqueta per HTML responsive -->
+  <meta name="description" content="">
+  <meta name="author" content="Aleix Leon">
 
-<title>CSS3-EX-93_aleon</title><!-- títol de la web -->
+  <title>CSS3-EX-93_aleon</title><!-- títol de la web -->
 
-<!-- CSS interns -->
-<style>
+  <!-- CSS interns -->
+  <style>
+    nav {
+      background: deepskyblue;
+    }
 
-nav {
-  background: deepskyblue;
-}
+    nav a {
+      text-decoration: none;
+      display: block;
+      line-height: 1.5em;
+      padding: 1em;
+      color: white;
+    }
 
-nav a {
-  text-decoration: none;
-  display: block;
-  line-height:1.5em;
-  padding: 1em;
-  color: white;
-}
+    ul {
+      padding: 0;
+      margin: 0;
+      display: flex;
+      flex-wrap: wrap;
+      flex-direction: row;
+      list-style-type: none;
+      justify-content: flex-end;
+    }
 
-ul {
-  padding: 0;
-  margin: 0;
-  display: flex;
-  flex-wrap: wrap;
-  flex-direction: row;
-  list-style-type: none;
-  justify-content: flex-end;
-}
+    footer {
+      padding-top: 5em;
+    }
+  </style>
+  <!-- estils aleon -->
+  <!--<link rel="stylesheet" type="text/css" href="css/aleon.css" >-->
 
-footer {
-  padding-top: 5em;
-}
-
-</style>
-<!-- estils aleon -->
-<!--<link rel="stylesheet" type="text/css" href="css/aleon.css" >-->
- 
 </head>
+
 <body>
 
   <nav>
@@ -53,8 +52,11 @@ footer {
       <li><a href="#">Products</a></li>
       <li><a href="#">Contact</a></li>
     </ul>
-    </nav>
+  </nav>
 
-<footer><p></br>© Aleix Leon 2021-22</p></footer>
+  <footer>
+    <p></br>© Aleix Leon 2021-22</p>
+  </footer>
 </body>
+
 </html>
