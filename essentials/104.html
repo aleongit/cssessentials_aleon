@@ -1,0 +1,58 @@
+<!doctype html>
+<html lang="ca">
+ 
+<head>
+<!-- Required meta tags -->
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+    
+<title>Animacions 4 by aleon</title>
+  
+<style type="text/css">
+
+div.bird {
+  /* Posicionem al contenidor pare */
+  position: absolute;
+  margin: 2% auto;
+  width: 20%;
+  height:0;
+  /* Canviant height per padding aconseguim no deformar l'esfera */
+  padding-bottom: 20%;
+  /* Imatge de fons, cobertura total */
+  background-image: url("../img/bird.png");
+  background-size: cover;
+  /* Convertim la imatge en rodona */
+  transition: transform 1s, border-radius 1s;
+  /*border: solid 1px black;*/
+
+}
+
+div.bird:hover {
+  transform: rotate(360deg);
+  border-radius: 50%;
+  box-shadow:  0 0 50px  rgb(255, 166, 0);
+}
+
+.container {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  
+}
+    
+</style>
+
+</head>
+
+  <!--
+-->
+
+<body>
+<div class="container">
+  <div class="bird"></div>
+</div>
+
+
+</body>
+
+</html>

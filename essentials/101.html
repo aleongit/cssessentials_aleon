@@ -1,0 +1,73 @@
+<!doctype html>
+<html lang="ca">
+ 
+<head>
+<!-- Required meta tags -->
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+    
+<title>Animacions 1 by aleon</title>
+  
+<style type="text/css">
+
+@keyframes ani1{
+  from {
+    left:20px;
+    background-color: red;
+  }
+
+  50% {
+    background-color: green;
+  }
+
+  to {
+    left:370px;
+    background-color:blue;
+  }
+}
+
+div {
+position: fixed;
+left:20px;
+background-color: red;
+width:150px;
+height:150px;
+}
+
+.primera:hover{
+width:500px;
+background-color: yellow;
+transition: background-color 3s ease-in, width 3s ease-in;
+}
+
+.segona{
+top: 180px;
+animation:
+ani1 5s ease-in-out 1s infinite alternate;
+}
+    
+</style>
+
+</head>
+
+  <!--
+● Exercici Animació 1:
+● Element 1:
+– Afegir una transició que arranqui quan el cursor es situï a sobre de
+l’element.
+– Ha de canviar el color de fons i l’amplada de l’element.
+● Element 2:
+– Afegir una animació infinita de 5s de duració i un retard de 1s.
+– Ha de canviar el color de red → green → blue
+– Ha de canviar la posició.
+-->
+
+<body>
+
+<div class="primera"></div>
+<br />
+<div class="segona"></div>
+
+</body>
+
+</html>

@@ -40,6 +40,10 @@ const CATEGORIES = {
     title: "CSS Flex",
     color: "201 71 232", //lila
   },
+  cssanimations: {
+    title: "CSS Animations",
+    color: "135 151 241", //blau
+  },
   cssprojects: {
     title: "CSS Projects",
     color: "224 224 224", //gris
@@ -484,6 +488,46 @@ const ESSENTIALS = [
     title: "CSS3 Flex 11",
     subtitle: "Exemples amb flex",
     text: `The Flexible Box Module, usually referred to as flexbox, was designed as a one-dimensional layout model, and as a method that could offer space distribution between items in an interface and powerful alignment capabilities.`,
+  },
+  {
+    id: 101,
+    href: `essentials/101.html`,
+    category: CATEGORIES.cssanimations,
+    title: "CSS3 Animations 1",
+    subtitle: "Exemples d'animacions amb CSS",
+    text: `@keyframes, animation-name, animation-duration, animation-delay, animation-iteration-count, animation-direction, animation-timing-function, animation-fill-mode, animation`,
+  },
+  {
+    id: 102,
+    href: `essentials/102.html`,
+    category: CATEGORIES.cssanimations,
+    title: "CSS3 Animations 2",
+    subtitle: "Exemples d'animacions amb CSS",
+    text: `@keyframes, animation-name, animation-duration, animation-delay, animation-iteration-count, animation-direction, animation-timing-function, animation-fill-mode, animation`,
+  },
+  {
+    id: 103,
+    href: `essentials/103.html`,
+    category: CATEGORIES.cssanimations,
+    title: "CSS3 Animations 3",
+    subtitle: "Exemples d'animacions amb CSS",
+    text: `@keyframes, animation-name, animation-duration, animation-delay, animation-iteration-count, animation-direction, animation-timing-function, animation-fill-mode, animation`,
+  },
+  {
+    id: 104,
+    href: `essentials/104.html`,
+    category: CATEGORIES.cssanimations,
+    title: "CSS3 Animations 4",
+    subtitle: "Exemples d'animacions amb CSS",
+    text: `@keyframes, animation-name, animation-duration, animation-delay, animation-iteration-count, animation-direction, animation-timing-function, animation-fill-mode, animation`,
+  },
+  {
+    id: 105,
+    href: `essentials/105.html`,
+    category: CATEGORIES.cssanimations,
+    title: "CSS3 Story Board",
+    subtitle: "Exemples d'story board amb CSS",
+    text: `@keyframes, animation-name, animation-duration, animation-delay, animation-iteration-count, animation-direction, animation-timing-function, animation-fill-mode, animation`,
   },
   {
     id: 991,
