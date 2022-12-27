@@ -9,6 +9,7 @@ Recopilació d'exercicis essencials CSS by aleon.
 - **CSS3 Backgrounds** 51 to 52
 - **CSS3 Forms** 61 to 63
 - **CSS3 Responsive** 71 to 73
+- **CSS3 Grid** 81 to 83
 
 
 ## Requeriments

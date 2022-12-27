@@ -32,6 +32,10 @@ const CATEGORIES = {
     title: "CSS Responsive",
     color: "255 87 34", //roig
   },
+  cssgrid: {
+    title: "CSS Grid",
+    color: "233 83 134", //rosa
+  },
 };
 
 //object
@@ -360,5 +364,29 @@ const ESSENTIALS = [
     Responsive web design uses only HTML and CSS.
     Responsive web design is not a program or a JavaScript.
     Viewport: The viewport is the user's visible area of a web page`,
+  },
+  {
+    id: 81,
+    href: `essentials/81.html`,
+    category: CATEGORIES.cssgrid,
+    title: "CSS3 Grid 1",
+    subtitle: "Exemples de grid",
+    text: `CSS Grid Layout excels at dividing a page into major regions or defining the relationship in terms of size, position, and layer, between parts of a control built from HTML primitives`,
+  },
+  {
+    id: 82,
+    href: `essentials/82.html`,
+    category: CATEGORIES.cssgrid,
+    title: "CSS3 Grid 2",
+    subtitle: "Exemples de grid",
+    text: `CSS Grid Layout excels at dividing a page into major regions or defining the relationship in terms of size, position, and layer, between parts of a control built from HTML primitives`,
+  },
+  {
+    id: 83,
+    href: `essentials/83.html`,
+    category: CATEGORIES.cssgrid,
+    title: "CSS3 Grid 3",
+    subtitle: "Exemples de grid",
+    text: `CSS Grid Layout excels at dividing a page into major regions or defining the relationship in terms of size, position, and layer, between parts of a control built from HTML primitives`,
   },
 ];
