@@ -32,3 +32,5 @@ Recopilació d'exercicis essencials CSS by aleon.
 - cd cssessentials_aleon
 - **open** index.html in browser
 
+
+![Screenshot](screenshots/1.png)
